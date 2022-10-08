@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Sale</title>
+    <link rel="stylesheet" href="/style.css">
+    <script language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" href="/script.js">
+</head>
+<body>
+    <h1>How much is your discount?</h1>
+
+    <p><form class="myform">
+        <label for="customer-id">
+            customer-id:
+            <input id="customer-id-input" type="number" name="customer-id" placeholder="cust-ID" value="" required>
+        </label>
+        <label for="unit-price">
+           unit-price
+            <input id="unit-price" type="number" name="unit-price" placeholder="Ksh" value="" required>
+        </label>
+        <label for="quantity">
+            quantity
+             <input id="quantity" type="number" name="quantity" placeholder="QT" value="" required>
+         </label>
+         <label for="description">
+            description
+             <input id="description-input" type="string" name="description" placeholder="item" value="" required>
+         </label>
+         <label for="discount">
+            discount
+             <input id="discount" type="number" name="discount" placeholder="% disc" value="" required>
+         </label>
+        </label>
+        <br><br>
+        <input id="getDiscountedAmount" type="submit" name="" value="Get amount">
+        <br><br>
+    </form>
+    <form onclick="discountedAmount()">
+        <input class="Clear" type="submit" value="clear">
+    </form>
+
+
+    <h4 id=amountDue><strong>Amount due:</strong></h4>
+    <p id="result"></p>
+    <h4 id=dicountedAmount><strong>Discounted amount:</strong></h4>
+    <p id="result"></p>
+</div>
+</div></p>
+<script src="/script.js"></script>
+
+</body>
+</html>
